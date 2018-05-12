@@ -13,7 +13,7 @@ Requirement
 ===========
 
 :Python: 3.6
-:Djanngo: 1.8
+:Django: 1.8
 
 Quick start
 ===========
@@ -52,5 +52,5 @@ Notes
 
 **上記のpython3は、python3.6へのシンボリックリンクです。
 
-**python3.6、django1.9のインストール方法はググって下さい。
+**python3.6、django1.8のインストール方法はググって下さい。
 

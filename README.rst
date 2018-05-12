@@ -26,7 +26,7 @@ Quick start
 
         pytyon3 manage.py migrate
 
-#. サーバをプロセスを起動する::
+#. サーバプロセスを起動する::
 
        python3 manage.py runserver 0.0.0.0:8000
 

@@ -24,6 +24,7 @@ Quick start
 
 #. モデルのmigrate::
 
+        cd code-good-parts
         pytyon3 manage.py migrate
 
 #. サーバプロセスを起動する::

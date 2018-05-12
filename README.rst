@@ -5,15 +5,23 @@ Pnの受け側のプロジェクトです。
 GETリクエストを受け取って、DeviceTokenテーブルに
 device_tokenと登録年月日を登録します。
 
+試験する時は、
 http://<yourhostname>:8000/api/v1/register/?devcice_token=xxxx
-
 で呼び出して下さい。
+
+Pn側から結合する時は、
+Pn側の以下ファイルのregister_server_urlのIPアドレス部分を<yourhostname>に置き換えてください。
+Pn\app\src\main\res\values\strings.xml
 
 Requirement
 ===========
 
 :Python: 3.6
 :Django: 1.8
+
+Environment
+===========
+先日Evernoteで公開したメモ参照。
 
 Quick start
 ===========

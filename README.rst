@@ -1,0 +1,55 @@
+==============================
+Pnの受け側のプロジェクトです。
+==============================
+
+GETリクエストを受け取って、DeviceTokenテーブルに
+device_tokenと登録年月日を登録します。
+
+http://<yourhostname>:8000/api/v1/register/?devcice_token=xxxx
+
+で呼び出して下さい。
+
+Requirement
+===========
+
+:Python: 3.6
+:Djanngo: 1.8
+
+Quick start
+===========
+
+#. プロジェクトのクローン::
+
+        git clone https://github.com/dsnull/code-good-parts
+
+#. モデルのmigrate::
+
+        pytyon3 manage.py migrate
+
+#. サーバをプロセスを起動する::
+
+       python3 manage.py runserver 0.0.0.0:8000
+
+Notes
+===========
+
+#. 登録されたdevice_tokenの見方::
+
+        http://<yourhostname>:8000/admin/
+        へアクセス。
+        DeviceTokensをクリックして出てくる一覧の中から
+        一番上の行をクリックする。
+
+        但し、認証を要求してくるので、superuserを作っておく。
+
+#. supueruserの作り方::
+
+        python3 manage.py createsuperuser
+         
+        ユーザ名、メールアドレス、パスワードを要求されるので、
+        入力する。
+
+**上記のpython3は、python3.6へのシンボリックリンクです。
+
+**python3.6、django1.9のインストール方法はググって下さい。
+
